@@ -38,7 +38,7 @@ app.use(express.static("public"));
 
 
 // Mongo URI
-const mongoURI=env("MONGO_URI");
+const mongoURI=process.env.MONGO_URI;
 
 
 // create mongodb connection
